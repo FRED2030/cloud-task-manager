@@ -10,11 +10,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Atlas connected"))
-  .catch(err => console.error("❌ MongoDB connection error:", err));
-
 // Task Schema
 const TaskSchema = new mongoose.Schema({
   title: String,
@@ -83,7 +78,15 @@ process.on("unhandledRejection", err => {
   console.error("Unhandled Rejection:", err);
 });
 
-// Start server
-app.listen(3000, "0.0.0.0", () => {
-  console.log("🚀 Server running on port 3000");
-});
+// ✅ Start ONLY after DB connects
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("✅ MongoDB Atlas connected");
+
+    app.listen(3000, "0.0.0.0", () => {
+      console.log("🚀 Server running on port 3000");
+    });
+  })
+  .catch(err => {
+    console.error("❌ MongoDB connection error:", err);
+  });
