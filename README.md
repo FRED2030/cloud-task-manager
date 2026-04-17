@@ -72,7 +72,7 @@ User → Browser → EC2 Public IP → Docker Container → Node.js API → Mong
 [
   {
     "_id": "69df8c8758e44a2c426914b5",
-    "title": "My first task",
+    "title": "My simple task",
     "completed": false
   }
 ]
