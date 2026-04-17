@@ -60,3 +60,4 @@ docker run -d -p 3000:3000 --name task-api your-dockerhub/task-api:latest
 
 
 🔁 CI/CD Pipeline
+![image_alt](https://github.com/FRED2030/cloud-task-manager/blob/95a342c653a2ef88d408f9b6680222559f9b7955/cicd%20pipeline.PNG)
