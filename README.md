@@ -20,3 +20,4 @@ CI/CD	GitHub Actions
 Runtime	Linux (Ubuntu)
 
 🏗️ System Architecture
+![image_alt](https://github.com/FRED2030/cloud-task-manager/blob/bcb986e8498df0f6934fc1a64c7652dd715ecdf5/System%20Architecture.png)
