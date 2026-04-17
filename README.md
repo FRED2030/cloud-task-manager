@@ -1,8 +1,8 @@
-# 📌 Overview 
+## 📌 Overview 
 
-# A full-stack Task Manager API built with Node.js, Express, and MongoDB, fully containerized with Docker and deployed to AWS EC2 using CI/CD automation.
+### A full-stack Task Manager API built with Node.js, Express, and MongoDB, fully containerized with Docker and deployed to AWS EC2 using CI/CD automation.
 
-## ⚡ Features
+### ⚡ Features
 🟢 RESTful API (CRUD operations)
 🟢 Dockerized backend
 🟢 MongoDB Atlas / Local support
@@ -11,7 +11,7 @@
 🟢 Auto-redeploy on push
 🟢 Production-ready architecture
 
-## H1 🧱 Tech Stack
+### 🧱 Tech Stack
 Layer	Technology
 Backend	Node.js, Express
 Database	MongoDB (Mongoose)
@@ -20,11 +20,11 @@ Cloud	AWS EC2
 CI/CD	GitHub Actions
 Runtime	Linux (Ubuntu)
 
-## H1🏗️ System Architecture
+### 🏗️ System Architecture
 ![image_alt](https://github.com/FRED2030/cloud-task-manager/blob/bcb986e8498df0f6934fc1a64c7652dd715ecdf5/System%20Architecture.png)
 
 
-## H1📁 Project Structure
+### 📁 Project Structure
 cloud-task-manager/
 │
 ├── server.js          # Express API
@@ -36,7 +36,7 @@ cloud-task-manager/
 └── frontend/          # Simple UI (optional)
 
 
-## 🚀 API Endpoints
+### 🚀 API Endpoints
 Method	Endpoint	Description
 GET	/tasks	Get all tasks
 POST	/tasks	Create task
@@ -44,12 +44,12 @@ PUT	/tasks/:id	Update task
 DELETE	/tasks/:id	Delete task
 
 
-## 🐳 Docker Setup
+### 🐳 Docker Setup
 docker build -t task-api .
 docker run -d -p 3000:3000 --name task-api task-api
 
 
-## ☁️ AWS EC2 Deployment
+### ☁️ AWS EC2 Deployment
 ssh ubuntu@your-ec2-ip
 
 docker pull your-dockerhub/task-api:latest
@@ -60,15 +60,15 @@ docker rm task-api || true
 docker run -d -p 3000:3000 --name task-api your-dockerhub/task-api:latest
 
 
-## 🔁 CI/CD Pipeline
+### 🔁 CI/CD Pipeline
 ![image_alt](https://github.com/FRED2030/cloud-task-manager/blob/95a342c653a2ef88d408f9b6680222559f9b7955/cicd%20pipeline.PNG)
 
 
-## 📊 System Flow
+### 📊 System Flow
 User → Browser → EC2 Public IP → Docker Container → Node.js API → MongoDB Atlas
 
 
-## 🧪 Example Response
+### 🧪 Example Response
 [
   {
     "_id": "69df8c8758e44a2c426914b5",
@@ -79,7 +79,7 @@ User → Browser → EC2 Public IP → Docker Container → Node.js API → Mong
 
 
 
-## 🧠 What I learned
+### 🧠 What I learned
 Docker container lifecycle management
 AWS EC2 deployment
 MongoDB Atlas integration
@@ -88,7 +88,7 @@ Debugging production issues (ports, memory, SSH)
 Real-world backend architecture design
 
 
-## 🚀 Future Improvements
+### 🚀 Future Improvements
 JWT authentication system
 Nginx reverse proxy
 HTTPS (SSL with Let's Encrypt)
@@ -96,7 +96,7 @@ Kubernetes deployment
 Monitoring with Prometheus/Grafana
 
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-# Fred King
+## Fred King
 DevOps Engineer | Cloud | Docker | AWS | Node.js
