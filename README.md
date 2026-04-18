@@ -54,7 +54,7 @@ MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/taskdb
 ## Run server
 node server.js
 
-## Test API-Locally
+## Test (Both) API-Locally / Externally 
 curl http://localhost:3000/tasks
 
 ## 🐳 Run with Docker
