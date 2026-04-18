@@ -100,7 +100,7 @@ SSH into EC2
 Pull latest image
 Restart container
 Update task
-![image_alt](
+![image_alt](https://github.com/FRED2030/cloud-task-manager/blob/79b8c643933b6906f9a91b45c3727ad5eb16d8e6/cicd%20pipeline.PNG)
 
 
 ## Example deployment script
