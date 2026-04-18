@@ -87,6 +87,7 @@ docker run -d -p 3000:3000 --name task-api your-dockerhub/task-api:latest
 ## Open port in AWS
 ### Security Group → Inbound Rules:
 Type	Port	Source
+
 HTTP	3000	0.0.0.0/0
 
 ## 🔁 CI/CD Pipeline (GitHub Actions)
@@ -126,12 +127,11 @@ PUT /tasks/:id
 DELETE /tasks/:id
 
 ### 🧪 Example Response
-![image_](
 
 [
   {
     "_id": "123",
-    "title": "My first task",
+    "title": "My task",
     "completed": false
   }
 ]
